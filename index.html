@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="app" role="application" aria-label="Flashcards — Machine Learning Basics">
+  <button id="resetBtn" class="ghost small" title="Reset progress">Reset Progress</button>
+  <button id="exportBtn" class="ghost small" title="Download progress as JSON">Export</button>
+  <div class="chip" id="scoreChip">Known: 0</div>
+  </div>
+  </header>
+
+
+  <main>
+  <section class="card-wrap">
+  <div id="card" class="card" aria-live="polite">
+  <div class="card-inner" id="cardInner">
+  <div class="face front" id="frontFace">
+  <div class="tag" id="cardNumber">Card 1 / 8</div>
+  <div class="question" id="questionText">Loading…</div>
+  <div class="nav">
+  <button id="prevBtn" class="ghost">◀ Prev</button>
+  <button id="showBtn" class="btn">Show Answer</button>
+  <button id="nextBtn" class="ghost">Next ▶</button>
+  </div>
+  </div>
+
+
+  <div class="face back" id="backFace">
+  <div class="tag">Answer</div>
+  <div class="answer" id="answerText">Answer goes here</div>
+  <div class="assess">
+  <button id="knewBtn" class="knew">I knew it</button>
+  <button id="didntBtn" class="not">I didn't</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+  <aside class="panel" aria-label="Progress panel">
+  <h3>Progress</h3>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  <div class="stats">
+  <div class="chip" id="progressCount">0 / 0 reviewed</div>
+  <div class="chip" id="knownCount">Known: 0</div>
+  <div class="chip" id="unknownCount">Unknown: 0</div>
+  </div>
+  <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+  <div class="small-muted">Tips</div>
+  <ul class="small-muted">
+  <li>Use <kbd>space</kbd> to flip, <kbd>←</kbd>/<kbd>→</kbd> to navigate</li>
+  <li>Mark quickly to track what you know</li>
+  </ul>
+  </aside>
+  </main>
+
+
+  <footer>
+  <div class="small-muted">Session storage keeps progress in this tab. Close tab to clear (or use Reset).</div>
+  <div class="small-muted">Made with ♥ — Responsive and keyboard friendly</div>
+  </footer>
+  </div>
+
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html
